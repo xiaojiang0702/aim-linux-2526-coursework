@@ -34,7 +34,8 @@
 
 # 请在下方写下你的命令（删除下面的 echo 语句并替换为你的命令，下面每一题都同理）
 cd generated
-mkdir -p workspace/scripts/date
+mkdir -p workspace/scripts
+mkdir -p workspace/data
 cd ..
 
 
@@ -65,13 +66,14 @@ EOF
 # 要求：删除 ./generated/workspace/scripts/utils.sh 文件
 # 请在下方写下你的命令
 rm -f utils.sh
+cd ..
 
 
 # 任务 5: 使用 rm 删除目录
 # 要求：删除 ./generated/workspace/data/ 目录
 
 # 请在下方写下你的命令
-rm -r ./generated/workspace/data/
+rm -r ./data/
 
 
 # 任务 6: 使用 cat 和 grep 创建和搜索文件
@@ -84,15 +86,15 @@ rm -r ./generated/workspace/data/
 # 提示：可以自行上网搜索如何一次性写入包含多行的文件
 
 # 请在下方写下你的命令
-cd ./generated/workspace
-
-cat > info.txt <<EOF
+# 任务6
+cat >info.txt<<EOF
 Linux is a powerful operating system.
 Bash scripting is fun and useful.
 Command line tools are essential for developers.
 EOF
-
 grep Linux info.txt > result.txt
+
+
 
 
 # ============================================================================
